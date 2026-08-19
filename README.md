@@ -1,6 +1,6 @@
 # scan-pdf-split
 
-Hermes / Kimi Code 技能：把**无文本层的扫描 PDF 按文档类别**（文件类型 × 标段/项目）拆分为多个独立 PDF。面向评标文档（打分明细、评审表、签到表、承诺书、监督报告等），也适用于任何混装扫描件。
+AI Agent 技能（SKILL.md 格式）：把**无文本层的扫描 PDF 按文档类别**（文件类型 × 标段/项目）拆分为多个独立 PDF。面向评标文档（打分明细、评审表、签到表、承诺书、监督报告等），也适用于任何混装扫描件。
 
 ## 功能
 
@@ -47,7 +47,7 @@ git clone https://github.com/ZacharyJiao/scan-pdf-split.git && cd scan-pdf-split
 
 ## 给 agent 的自动配置说明
 
-如果你是对话中的 agent（Kimi Code / Hermes）：把本仓库放在技能加载路径下（如 `~/.kimi-code/skills/scan-pdf-split`）。开始任务前检查 `<技能目录>/.venv/Scripts/python.exe`（Windows）或 `.venv/bin/python`（Unix）是否存在；**不存在就直接执行上面的一行命令**（在技能目录内创建 venv 并安装 `pymupdf` + `rapidocr_onnxruntime`），无需向用户索要任何其他工具或配置，然后按 `SKILL.md` 的流程执行即可。
+如果你是对话中的 AI agent：把本仓库放在 agent 的技能加载路径下（各工具约定不同，通常为用户目录下的 `skills/` 文件夹或项目内 `skills/` 目录）。开始任务前检查 `<技能目录>/.venv/Scripts/python.exe`（Windows）或 `.venv/bin/python`（Unix）是否存在；**不存在就直接执行上面的一行命令**（在技能目录内创建 venv 并安装 `pymupdf` + `rapidocr_onnxruntime`），无需向用户索要任何其他工具或配置，然后按 `SKILL.md` 的流程执行即可。
 
 ## 使用方式
 
